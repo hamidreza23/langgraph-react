@@ -1,0 +1,26 @@
+[project]
+name = "react-langgraph"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Hamidreza Dadvar",email = "hr.dadvar@hamsan.co.uk"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "langchain (>=0.3.27,<0.4.0)",
+    "langchain-openai (>=0.3.32,<0.4.0)",
+    "langchain-tavily (>=0.2.11,<0.3.0)",
+    "langgraph (>=0.6.6,<0.7.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+isort = "^6.0.1"
+
